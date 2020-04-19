@@ -15,4 +15,6 @@ https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
 
 https://github.com/andreruffert/rangeslider.js
 
+https://codepen.io/danielmdesigns/pen/epPXvd
+
 ```
