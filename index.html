@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <!-- Output Password TextBox Start -->
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+          <!-- Output Password TextBox End -->
+
+          <!-- Password Length Slider Start -->
+          <h2>Slide to determine legnth of password</h2>
+          <!--https://andreruffert.github.io/rangeslider.js/-->
+          <input
+            id="sliderBar"
+            type="range"
+            value="10"
+            step="1"
+            min="8"
+            max="128"
+          />
+          <small id="helper" class="slideRight"
+            >Slide to get started &#x2192;</small
+          >
+          <br />
+          <br />
+          <h2 style="display: inline-block; margin-bottom: 50px;"></h2>
+          <output style="display: inline-block;">10</output>
+          <!-- Password Length Slider End -->
+
+          <!-- Password Attribute Checkbox Start -->
+
+          <!-- checkboxes for lowercase, uppercase, numeric, and/or special characters -->
+          <form action="/action_page.php">
+            <input
+              type="checkbox"
+              id="lowercase"
+              name="lowercase"
+              value="lowercase"
+            />
+            <label for="lowercase">Lowercase</label><br />
+
+            <input
+              type="checkbox"
+              id="uppercase"
+              name="uppercase"
+              value="uppercase"
+            />
+            <label for="uppercase">Uppercase</label><br />
+
+            <input
+              type="checkbox"
+              id="numeric"
+              name="numeric"
+              value="numeric"
+            />
+            <label for="numeric">Numeric</label><br />
+
+            <input
+              type="checkbox"
+              id="specialChar"
+              name="specialChar"
+              value="specialChar"
+            />
+            <label for="vehicle3">Special Characters</label><br /><br />
+          </form>
+
+          <!-- Password Attribute Checkbox Start -->
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
