@@ -55,7 +55,7 @@ function generatePassword() {
   }
 
   if (boxesChecked === 0) {
-    return "You must check at least one attribute (Lowercase, Uppercase, Numeric, or Special Characters";
+    return "You must check at least one attribute (Lowercase, Uppercase, Numeric, or Special Characters)";
   }
 
   // Generating and return returnPassword here
